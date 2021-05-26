@@ -1,0 +1,16 @@
+def merge_the_tools(string, k):
+    # your code goes here
+    part = ''
+    i = 0
+    while i < len(string):
+        letter = string[i]
+        if letter not in part:
+            part = part + letter
+        i += 1
+        if i % k == 0:
+            print(part)
+            part = ''
+    return None
+    
+
+if __name__ == '__main__':
